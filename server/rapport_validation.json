@@ -1,0 +1,13 @@
+{
+  "validation_date": "2024-01-01",
+  "modeles_valides": 3,
+  "metriques_valides": 3,
+  "rounds_complets": 3,
+  "accuracies": [
+    0.9549670219421387,
+    0.9618152181307474,
+    0.9725319743156433
+  ],
+  "score_global": 100.0,
+  "statut": "EXCELLENT"
+}

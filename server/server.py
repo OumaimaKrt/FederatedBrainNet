@@ -26,6 +26,11 @@ def save_metrics(metrics, round_num):
 class FedAvgWithLogging(fl.server.strategy.FedAvg):
     def aggregate_fit(self, rnd, results, failures):
         """Agrégation des poids et des métriques des clients"""
+        
+        # --- Gestion des clients échoués ---
+        if failures:
+            print(f"Clients échoués au round {rnd} : {[str(f) for f in failures]}")
+
         aggregated_result = super().aggregate_fit(rnd, results, failures)
 
         if aggregated_result is None:
@@ -66,11 +71,14 @@ def main():
 
     print("Serveur Flower démarré sur le port 8081 ...")
 
-    fl.server.start_server(
-        server_address="0.0.0.0:8081",
-        config=fl.server.ServerConfig(num_rounds=3),
-        strategy=strategy,
-    )
+    try:
+        fl.server.start_server(
+            server_address="0.0.0.0:8081",
+            config=fl.server.ServerConfig(num_rounds=3),
+            strategy=strategy,
+        )
+    except Exception as e:
+        print(f"Erreur serveur : {e}")
 
 if __name__ == "__main__":
     main()
