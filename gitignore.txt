@@ -1,6 +1,0 @@
-server/test/venv/ 
-data/ 
-__pycache__/ 
-*.pyc 
-
-
