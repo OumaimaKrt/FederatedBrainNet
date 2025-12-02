@@ -12,7 +12,7 @@ class TestIntegration(unittest.TestCase):
     
     def test_models_and_metrics_integration(self):
         """Test l'intégration entre modèles et métriques"""
-        print("\n🔗 TEST D'INTÉGRATION MODÈLES/MÉTRIQUES")
+        print("\n TEST D'INTÉGRATION MODÈLES/MÉTRIQUES")
         
         # Vérifier l'existence des dossiers
         self.assertTrue(os.path.exists("saved_models"), "Dossier saved_models manquant")

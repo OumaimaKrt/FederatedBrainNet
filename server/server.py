@@ -69,12 +69,12 @@ def main():
         min_evaluate_clients=3,
     )
 
-    print("Serveur Flower démarré sur le port 8081 ...")
+    print("Serveur Flower démarré sur le port 8080 ...")
 
     try:
         fl.server.start_server(
-            server_address="0.0.0.0:8081",
-            config=fl.server.ServerConfig(num_rounds=3),
+            server_address="0.0.0.0:8080",
+            config=fl.server.ServerConfig(num_rounds=10),
             strategy=strategy,
         )
     except Exception as e:

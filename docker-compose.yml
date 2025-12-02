@@ -1,0 +1,58 @@
+services:
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile_server
+    container_name: federated_server
+    volumes:
+      - ./server/saved_models:/app/saved_models
+      - ./server/metrics_logs:/app/metrics_logs
+    ports:
+      - "9090:8080"
+    command: ["python", "server.py"]
+    networks:
+      - flnet
+
+  hopital1:
+    build:
+      context: ./clients/hopital_1
+      dockerfile: Dockerfile_client
+    container_name: hopital_1
+    volumes:
+      - ./clients/hopital_1/data:/app/data
+    depends_on:
+      - server
+    command: ["python", "train.py"]
+    networks:
+      - flnet
+
+  hopital2:
+    build:
+      context: ./clients/hopital_2
+      dockerfile: Dockerfile_client
+    container_name: hopital_2
+    volumes:
+      - ./clients/hopital_2/data:/app/data
+    depends_on:
+      - server
+    command: ["python", "train.py"]
+    networks:
+      - flnet
+
+  hopital3:
+    build:
+      context: ./clients/hopital_3
+      dockerfile: Dockerfile_client
+    container_name: hopital_3
+    volumes:
+      - ./clients/hopital_3/data:/app/data
+    depends_on:
+      - server
+    command: ["python", "train.py"]
+    networks:
+      - flnet
+
+networks:
+  flnet:
+    driver: bridge

@@ -52,7 +52,7 @@ class TestValidationComplete(unittest.TestCase):
         print(f" Métriques: {len(metrics_files)} fichiers .json")
         
         # === PHASE 2: VÉRIFICATION INTÉGRITÉ ===
-        print("\n🔍 PHASE 2: VÉRIFICATION D'INTÉGRITÉ")
+        print("\n PHASE 2: VÉRIFICATION D'INTÉGRITÉ")
         
         # 2.1 Modèles
         modeles_valides = 0
