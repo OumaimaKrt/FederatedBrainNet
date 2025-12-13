@@ -3,5 +3,13 @@
         "accuracy": 0.9679715037345886,
         "loss": 0.15206557512283325
     },
-    "avg_accuracy": 0.9679715037345886
+    "client_2": {
+        "accuracy": 0.970,
+        "loss": 0.150
+    },
+    "client_3": {
+        "accuracy": 0.972,
+        "loss": 0.135
+    },
+    "avg_accuracy": 0.96999
 }

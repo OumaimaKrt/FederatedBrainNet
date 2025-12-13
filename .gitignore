@@ -2,6 +2,5 @@ server/test/venv/
 data/
 __pycache__/
 *.pyc
-node_modules/ 
-
-
+node_modules/
+tf_env/

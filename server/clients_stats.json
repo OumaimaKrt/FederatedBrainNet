@@ -1,0 +1,23 @@
+{
+    "hopital_1": {
+        "total_images": 1404,
+        "tumor": 734,
+        "healthy": 670,
+        "tumorPercentage": 52.3,
+        "healthyPercentage": 47.7
+    },
+    "hopital_2": {
+        "total_images": 1520,
+        "tumor": 800,
+        "healthy": 720,
+        "tumorPercentage": 52.6,
+        "healthyPercentage": 47.4
+    },
+    "hopital_3": {
+        "total_images": 1590,
+        "tumor": 893,
+        "healthy": 697,
+        "tumorPercentage": 56.2,
+        "healthyPercentage": 43.8
+    }
+}
