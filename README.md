@@ -47,7 +47,7 @@ Frontend React (localhost:3000)
 | 5     | 98.34%   | 3       |
 | 10    | 98.02%   | 3       |
 
-**Improvement: +3.6% over 10 rounds — status: EXCELLENT**
+**Improvement: +3.45% over 10 rounds — status: EXCELLENT**
 
 ---
 
