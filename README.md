@@ -113,24 +113,4 @@ python test_integration.py       # Models/metrics integration
 python test_perfarmance.py       # Performance benchmarks
 python test_validation_complete.py # Full system validation
 ```
-
----
-
-## Team
-
-| Name | Role |
-|------|------|
-| KOURCHTE Oumaima | |
-| LAGRIDA Zineb | |
-| NAANAA Asmahane | |
-| ASSABBANE Sanaa | |
-| LAAROUSSI Taala | |
-
-Supervised by **Pr. EL HABOUZ Youssef** — Faculté des sciences Agadir, Filière ADIA
-
----
-
-## License
-
-MIT
 dataset link : https://drive.google.com/drive/folders/1OASLM-T10f05oZ_iqYD134gJRxIw1zNu
