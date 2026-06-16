@@ -68,7 +68,7 @@ Frontend React (localhost:3000)
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/FedBrainScan.git
+git clone https://github.com/OumaimaKrt/FederatedBrainNet.git
 cd FedBrainScan
 
 # Start federated system
