@@ -1,4 +1,4 @@
-# 🧠 FedBrainScan
+# FedBrainScan
 
 > Federated Learning system for brain tumor detection — without sharing patient data.
 
